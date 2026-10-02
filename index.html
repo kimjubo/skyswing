@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>하늘그네 · 광고 에이전시</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jua&family=Gaegu:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#1d1a17;--paper:#fffaf0;--sky:#cfe6fb;--yellow:#ffe27a;--pink:#ffd3de;--mint:#cdf0df;--lav:#e3d8ff;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+:root[data-theme="dark"]{--ink:#1d1a17}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+body{margin:0;background:var(--sky);color:var(--ink);font-family:"Gaegu","Jua","Apple SD Gothic Neo","Malgun Gothic",sans-serif;font-size:1.3rem;line-height:1.55}
+h1,h2,h3,.btn{font-family:"Jua","Gaegu","Apple SD Gothic Neo",sans-serif;font-weight:400}
+#bg{position:fixed;inset:0;overflow:hidden;z-index:0}
+#bg svg{position:absolute;display:block}
+main{position:relative;z-index:1}
+.hero{min-height:100svh;display:grid;place-items:center;padding:24px 16px}
+.panel{background:var(--paper);border:4px solid var(--ink);border-radius:56px 70px 60px 74px/66px 56px 74px 60px;
+padding:28px clamp(22px,6vw,64px) 36px;text-align:center;max-width:560px;width:100%;box-shadow:8px 8px 0 var(--ink)}
+h1{font-size:clamp(2.8rem,10vw,4.6rem);margin:0;line-height:1;letter-spacing:.02em}
+.sub{margin:6px 0 0;font-size:1.45rem}
+.stage{position:relative;width:min(74vw,300px);margin:6px auto 0}
+.stage svg{width:100%;height:auto;display:block;overflow:visible}
+.btn{display:inline-block;margin-top:14px;background:var(--yellow);color:var(--ink);text-decoration:none;font-size:1.4rem;
+padding:10px 28px;border:4px solid var(--ink);border-radius:999px;box-shadow:4px 4px 0 var(--ink);transition:transform .12s,box-shadow .12s}
+.snds{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:14px}
+.snd{font:inherit;font-size:1.15rem;background:var(--paper);color:var(--ink);border:3px solid var(--ink);border-radius:999px;padding:3px 16px;cursor:pointer}
+.snd[aria-pressed="true"]{background:var(--mint)}
+.btn:hover{transform:translate(2px,2px);box-shadow:2px 2px 0 var(--ink)}
+.btn:focus-visible,a:focus-visible{outline:4px solid #4a7fd6;outline-offset:3px}
+.zig{height:26px;background:var(--yellow) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='26'%3E%3Cpolyline points='0,20 10,6 20,20 30,6 40,20' fill='none' stroke='%231d1a17' stroke-width='4' stroke-linejoin='round'/%3E%3C/svg%3E") repeat-x center;border-block:4px solid var(--ink)}
+.sheet{background:var(--paper);border-bottom:4px solid var(--ink)}
+.wrap{max-width:980px;margin:0 auto;padding:56px 20px}
+h2{font-size:clamp(1.9rem,6vw,2.7rem);margin:0 0 8px}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:22px;margin-top:26px}
+.card{border:4px solid var(--ink);border-radius:30px 38px 28px 40px/38px 28px 40px 30px;padding:20px 22px;box-shadow:5px 5px 0 var(--ink)}
+.card:nth-child(1){background:var(--pink);transform:rotate(-1.4deg)}
+.card:nth-child(2){background:var(--mint);transform:rotate(1deg)}
+.card:nth-child(3){background:var(--lav);transform:rotate(-.6deg)}
+.card h3{margin:0 0 4px;font-size:1.6rem}.card p{margin:0}
+.say{background:var(--sky)}
+.say p{font-family:"Jua",sans-serif;font-size:clamp(1.5rem,5vw,2.2rem);line-height:1.4;margin:0;max-width:22em}
+.contact{text-align:center}
+footer{background:var(--ink);color:var(--paper);text-align:center;padding:22px;font-size:1.1rem}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<div id="bg" aria-hidden="true"></div>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+<filter id="wob0" filterUnits="userSpaceOnUse" x="-40" y="-40" width="380" height="430"><feTurbulence type="fractalNoise" baseFrequency=".05" numOctaves="2" seed="4"/><feDisplacementMap in="SourceGraphic" scale="4"/></filter><filter id="wob1" filterUnits="userSpaceOnUse" x="-40" y="-40" width="380" height="430"><feTurbulence type="fractalNoise" baseFrequency=".05" numOctaves="2" seed="11"/><feDisplacementMap in="SourceGraphic" scale="4"/></filter><filter id="wob2" filterUnits="userSpaceOnUse" x="-40" y="-40" width="380" height="430"><feTurbulence type="fractalNoise" baseFrequency=".05" numOctaves="2" seed="23"/><feDisplacementMap in="SourceGraphic" scale="4"/></filter>
+<path id="cl" d="M22 56 C8 56 4 40 17 37 C15 22 33 16 41 25 C47 10 71 12 72 28 C88 25 96 42 84 50 C82 56 76 56 72 56 Z"/>
+</defs></svg>
+
+<main>
+<section class="hero">
+  <div class="panel">
+    <h1>하늘그네</h1>
+    <p class="sub">광고, 한 번 쭉 밀어드립니다.</p>
+    <div class="stage" role="img" aria-label="구름 아래에서 삐걱거리며 흔들리는 빈 그네">
+      <svg viewBox="0 0 290 338">
+        <g id="hc" filter="url(#wob0)"><g transform="translate(20 10) scale(2.6)"><use href="#cl" fill="#fff" stroke="#1d1a17" stroke-width="2.4" stroke-linejoin="round"/>
+          <g class="eyes">
+            <circle cx="38" cy="38" r="7" fill="#fff" stroke="#1d1a17" stroke-width="1.8"/><circle class="p" cx="38" cy="38" r="3.2" fill="#1d1a17"/>
+            <circle cx="60" cy="38" r="7" fill="#fff" stroke="#1d1a17" stroke-width="1.8"/><circle class="p" cx="60" cy="38" r="3.2" fill="#1d1a17"/>
+          </g></g></g>
+        <g class="ropes">
+          <line x1="100" y1="152" x2="100" y2="277.3" stroke="#1d1a17" stroke-width="5" stroke-linecap="round"/>
+          <line x1="190" y1="152" x2="190" y2="277.3" stroke="#1d1a17" stroke-width="5" stroke-linecap="round"/></g>
+          <g class="seat">
+          <rect x="68" y="275.3" width="154" height="22" rx="7" fill="#ffe27a" stroke="#1d1a17" stroke-width="5"/>
+          <g id="lgL"><rect x="131.0" y="280" width="11" height="39" rx="5" fill="#ffe2c8" stroke="#1d1a17" stroke-width="3.5"/><ellipse cx="136.5" cy="321" rx="9" ry="5" fill="#ff7a7a" stroke="#1d1a17" stroke-width="3.5"/></g><g id="lgR"><rect x="149.0" y="280" width="11" height="39" rx="5" fill="#ffe2c8" stroke="#1d1a17" stroke-width="3.5"/><ellipse cx="154.5" cy="321" rx="9" ry="5" fill="#ff7a7a" stroke="#1d1a17" stroke-width="3.5"/></g>
+          <polygon points="130,230.2 160,230.2 175,277.1 168,282 122,282 115,277.1" fill="#ff9fb8" stroke="#1d1a17" stroke-width="4" stroke-linejoin="round"/>
+          <path id="aInk" d="M131 235 Q112 241 100 246 M159 235 Q178 241 190 246" fill="none" stroke="#1d1a17" stroke-width="10" stroke-linecap="round"/>
+          <path id="aSkin" d="M131 235 Q112 241 100 246 M159 235 Q178 241 190 246" fill="none" stroke="#ffe2c8" stroke-width="4" stroke-linecap="round"/>
+          <g transform="translate(0 12.2)"><circle cx="124" cy="206" r="8" fill="#7a4b2a" stroke="#1d1a17" stroke-width="3.5"/><circle cx="166" cy="206" r="8" fill="#7a4b2a" stroke="#1d1a17" stroke-width="3.5"/>
+          <circle cx="145" cy="198" r="17" fill="#ffe2c8" stroke="#1d1a17" stroke-width="4"/>
+          <path d="M127 197 A18 18 0 0 1 163 197 Q155 187 145 190 Q135 187 127 197Z" fill="#7a4b2a" stroke="#1d1a17" stroke-width="3.5" stroke-linejoin="round"/>
+          <circle cx="129" cy="186" r="4.5" fill="#ff5a6e" stroke="#1d1a17" stroke-width="2.5"/><circle cx="161" cy="186" r="4.5" fill="#ff5a6e" stroke="#1d1a17" stroke-width="2.5"/>
+          <circle cx="139" cy="201" r="2.2" fill="#1d1a17"/><circle cx="151" cy="201" r="2.2" fill="#1d1a17"/>
+          <circle cx="133.5" cy="207" r="3" fill="#ffb3c1"/><circle cx="156.5" cy="207" r="3" fill="#ffb3c1"/>
+          <path d="M140 207 Q145 212 150 207" fill="none" stroke="#1d1a17" stroke-width="2.5" stroke-linecap="round"/></g>
+          <circle id="hL" cx="100" cy="246" r="5" fill="#ffe2c8" stroke="#1d1a17" stroke-width="3"/><circle id="hR" cx="190" cy="246" r="5" fill="#ffe2c8" stroke="#1d1a17" stroke-width="3"/>
+        </g>
+      </svg>
+    </div>
+    <a class="btn" href="#contact">그네 타러 가기</a><div class="snds"><button class="snd" id="snd" type="button" aria-pressed="true">🔊 소리 끄기</button></div>
+  </div>
+</section>
+
+<div class="zig"></div>
+<section class="sheet" id="work"><div class="wrap">
+  <h2>우리가 하는 일</h2>
+  <p>브랜드가 낯선 사람에게 먼저 인사하는 방법을 만듭니다.</p>
+  <div class="cards">
+    <div class="card"><h3>이름과 브랜딩</h3><p>이름, 로고, 말투를 정합니다. 처음 보는 사람도 한 번에 기억하도록.</p></div>
+    <div class="card"><h3>캠페인과 영상</h3><p>기획부터 촬영, 편집까지. 짧게 봐도 끝까지 보게 만듭니다.</p></div>
+    <div class="card"><h3>성과 광고 운영</h3><p>검색, SNS, 배너를 운영합니다. 숫자는 매주 쉬운 말로 보고합니다.</p></div>
+  </div>
+</div></section>
+
+<div class="zig"></div>
+<section class="sheet say"><div class="wrap">
+  <p>높이 올라갈수록 멀리 보입니다. 우리는 그네 줄을 잡고, 당신은 시선을 모으세요.</p>
+</div></section>
+
+<div class="zig"></div>
+<section class="sheet contact" id="contact"><div class="wrap">
+  <h2>같이 흔들려 볼까요</h2>
+  <p>프로젝트 이야기를 보내주세요. 하루 안에 답장합니다.</p>
+  <a class="btn" href="mailto:hi@jubo.kim">hi@jubo.kim</a>
+</div></section>
+<footer>© 2026 하늘그네</footer>
+</main>
+
+<script>
+(function(){
+  var bg=document.getElementById('bg'),cols=['#fff','#ffd3de','#cdf0df','#e3d8ff','#ffe9a8','#fff'];
+  var eyes=[],hero=[],mx=null,my=null,raf=0;
+  function build(){
+    bg.innerHTML='';eyes=[];
+    var w=innerWidth,h=innerHeight,s=w<600?76:108,rh=s*.62,n=0;
+    for(var r=0,y=-rh/2;y<h+rh;r++,y+=rh){
+      for(var x=(r%2?-s/2:0);x<w+s;x+=s){
+        var d=document.createElement('div');
+        d.innerHTML='<svg viewBox="0 0 100 64" width="'+s*.92+'" height="'+s*.92*.64+'" style="left:'+x+'px;top:'+y+'px"><use href="#cl" fill="'+cols[(n++*7+r*3)%cols.length]+'" stroke="#1d1a17" stroke-width="3" stroke-linejoin="round"/><circle cx="38" cy="38" r="7" fill="#fff" stroke="#1d1a17" stroke-width="2"/><circle class="p" cx="38" cy="38" r="3.2" fill="#1d1a17"/><circle cx="60" cy="38" r="7" fill="#fff" stroke="#1d1a17" stroke-width="2"/><circle class="p" cx="60" cy="38" r="3.2" fill="#1d1a17"/></svg>';
+        bg.appendChild(d.firstChild);
+      }
+    }
+    var ps=bg.querySelectorAll('.p');
+    for(var i=0;i<ps.length;i++){var p=ps[i],r2=p.previousElementSibling.getBoundingClientRect();
+      eyes.push({p:p,cx:r2.left+r2.width/2,cy:r2.top+r2.height/2,k:2.6/(r2.width/14)*1});}
+    hero=[].slice.call(document.querySelectorAll('.stage .p'));
+    look(mx==null?innerWidth/2:mx,my==null?innerHeight*1.2:my);
+  }
+  function aim(p,cx,cy,x,y,k){
+    var dx=x-cx,dy=y-cy,d=Math.hypot(dx,dy)||1,m=3.4;
+    p.setAttribute('transform','translate('+(dx/d*m).toFixed(2)+' '+(dy/d*m).toFixed(2)+')');
+  }
+  function look(x,y){
+    for(var i=0;i<eyes.length;i++){var e=eyes[i];aim(e.p,e.cx,e.cy,x,y);}
+    for(var j=0;j<hero.length;j++){var r=hero[j].previousElementSibling.getBoundingClientRect();aim(hero[j],r.left+r.width/2,r.top+r.height/2,x,y);}
+  }
+  function move(e){mx=e.clientX;my=e.clientY;if(!raf)raf=requestAnimationFrame(function(){raf=0;look(mx,my);});}
+  addEventListener('pointermove',move,{passive:true});
+  addEventListener('pointerdown',move,{passive:true});
+  var t;addEventListener('resize',function(){clearTimeout(t);t=setTimeout(build,150);});
+  build();
+})();
+
+(function(){
+  var b=document.getElementById('snd'),ac,bus,noise,want=true,running=false,tm=0,ct=0,nt=0,n=0,E=14/64;
+  var L=[76,79,76,72,79,76,72,67, 76,81,76,72,69,72,76,0, 77,81,77,72,81,77,72,69, 74,79,74,71,79,74,71,67,
+         72,76,79,84,79,76,72,76, 81,79,76,72,76,79,81,0, 77,76,74,72,74,76,77,79, 79,77,76,74,71,74,67,71];
+  var R=[48,45,41,43,48,45,41,43];
+  function fq(m){return 440*Math.pow(2,(m-69)/12);}
+  function tone(type,m,t,d,v){
+    var o=ac.createOscillator(),g=ac.createGain();o.type=type;o.frequency.value=fq(m);
+    g.gain.setValueAtTime(0,t);g.gain.linearRampToValueAtTime(v,t+.008);g.gain.setValueAtTime(v,t+d*.7);g.gain.linearRampToValueAtTime(0,t+d);
+    o.connect(g);g.connect(bus);o.start(t);o.stop(t+d+.02);
+  }
+  function hit(t,d,v,f){
+    var s=ac.createBufferSource(),g=ac.createGain(),h=ac.createBiquadFilter();
+    s.buffer=noise;h.type='highpass';h.frequency.value=f;
+    g.gain.setValueAtTime(v,t);g.gain.exponentialRampToValueAtTime(.001,t+d);
+    s.connect(h);h.connect(g);g.connect(bus);s.start(t);s.stop(t+d+.02);
+  }
+  function kick(t){
+    var o=ac.createOscillator(),g=ac.createGain();
+    o.frequency.setValueAtTime(130,t);o.frequency.exponentialRampToValueAtTime(40,t+.12);
+    g.gain.setValueAtTime(.3,t);g.gain.exponentialRampToValueAtTime(.001,t+.14);
+    o.connect(g);g.connect(bus);o.start(t);o.stop(t+.16);
+  }
+  function sched(t0){
+    for(var i=0;i<64;i++){
+      var t=t0+i*E,k=i%8;
+      if(L[i])tone('square',L[i],t,E*.88,.42);
+      tone('triangle',R[i>>3]+(i&1?12:0),t,E*.95,.34);
+      if(k==0||k==4)kick(t);else if(k==2||k==6)hit(t,.12,.14,1500);else hit(t,.04,.05,7000);
+    }
+  }
+  function run(){
+    if(!running)return;
+    if(nt<ac.currentTime)nt=ac.currentTime+.05;
+    sched(nt);nt+=14;
+    tm=setTimeout(run,Math.max(200,(nt-ac.currentTime-1.5)*1000));
+  }
+  function creak(){
+    var t=ac.currentTime,hi=n++%2,o=ac.createOscillator(),l=ac.createOscillator(),lg=ac.createGain(),f=ac.createBiquadFilter(),g=ac.createGain();
+    o.type='sawtooth';o.frequency.setValueAtTime(hi?190:150,t);o.frequency.linearRampToValueAtTime(hi?270:210,t+.5);
+    l.frequency.value=26;lg.gain.value=16;l.connect(lg);lg.connect(o.frequency);
+    f.type='bandpass';f.frequency.value=950;f.Q.value=4;
+    g.gain.setValueAtTime(0,t);g.gain.linearRampToValueAtTime(.11,t+.08);g.gain.exponentialRampToValueAtTime(.001,t+.6);
+    o.connect(f);f.connect(g);g.connect(ac.destination);
+    o.start(t);l.start(t);o.stop(t+.65);l.stop(t+.65);
+  }
+  function next(){
+    clearTimeout(ct);if(!running)return;
+    var c=performance.now()%1950;
+    ct=setTimeout(function(){if(running&&!document.hidden)creak();next();},1950-c);
+  }
+  function begin(){
+    if(running||!want||ac.state!=='running')return;
+    if(!noise){noise=ac.createBuffer(1,ac.sampleRate*.3,ac.sampleRate);var d=noise.getChannelData(0);for(var i=0;i<d.length;i++)d[i]=Math.random()*2-1;}
+    bus=ac.createGain();bus.gain.value=.078;bus.connect(ac.destination);
+    running=true;nt=ac.currentTime+.05;run();next();
+  }
+  function halt(){
+    running=false;clearTimeout(tm);clearTimeout(ct);
+    if(bus){var old=bus;old.gain.setTargetAtTime(0,ac.currentTime,.03);setTimeout(function(){old.disconnect();},400);}
+  }
+  function tryStart(){
+    if(!want||running)return;
+    try{
+      if(!ac){ac=new (window.AudioContext||window.webkitAudioContext)();ac.onstatechange=begin;}
+      ac.resume();begin();
+    }catch(e){}
+  }
+  function gesture(e){if(e.target.closest&&e.target.closest('#snd'))return;tryStart();}
+  ['pointerdown','pointerup','touchstart','touchend','click','keydown','wheel','scroll'].forEach(function(ev){addEventListener(ev,gesture,{passive:true});});
+  b.addEventListener('click',function(){
+    want=!want;
+    b.setAttribute('aria-pressed',want);b.textContent=want?'🔊 소리 끄기':'🔇 소리 켜기';
+    if(want)tryStart();else halt();
+  });
+  tryStart();
+})();
+(function(){
+  var els=document.querySelectorAll('#hc,.ropes,.seat'),i=0;
+  function set(){for(var k=0;k<els.length;k++)els[k].setAttribute('filter','url(#wob'+i+')');}
+  set();setInterval(function(){i=(i+1)%3;set();},800);
+})();
+(function(){
+  var q=function(x){return document.querySelector(x);},seat=q('.seat'),ropes=q('.ropes'),aI=q('#aInk'),aS=q('#aSkin'),hL=q('#hL'),hR=q('#hR'),lL=q('#lgL'),lR=q('#lgR');
+  var P=3900,A=30,LEN=125.3,YH=246,k=(YH-152)/LEN;
+  function f(n){return n.toFixed(2);}
+  function frame(now){
+    var w=2*Math.PI*((now%P)/P),T=-A*Math.cos(w),hx=T*k-T,xl=100+hx,xr=190+hx,s1=3*Math.sin(2*w+1),s2=2.5*Math.cos(2*w+2),th=-20*Math.cos(w-.4);
+    seat.setAttribute('transform','translate('+f(T)+' 0)');
+    ropes.setAttribute('transform','translate(0 152) skewX('+(Math.atan(T/LEN)*180/Math.PI).toFixed(3)+') translate(0 -152)');
+    var d='M131 235 Q'+f((131+xl)/2-4+s1)+' '+f(241+s2)+' '+f(xl)+' '+YH+' M159 235 Q'+f((159+xr)/2+4+s1)+' '+f(241-s2)+' '+f(xr)+' '+YH;
+    aI.setAttribute('d',d);aS.setAttribute('d',d);
+    hL.setAttribute('cx',f(xl));hR.setAttribute('cx',f(xr));
+    lL.setAttribute('transform','rotate('+f(th)+' 136.5 290)');lR.setAttribute('transform','rotate('+f(th)+' 154.5 290)');
+    requestAnimationFrame(frame);
+  }
+  requestAnimationFrame(frame);
+})();
+</script>
+</body>
+</html>

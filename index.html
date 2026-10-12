@@ -474,7 +474,6 @@ form.inq label.pick input:focus-visible+span{outline:3px solid #4a7fd6;outline-o
       </div>
       <div class="row2">
         <label>연락처<input name="phone" type="tel" autocomplete="tel" placeholder="010-0000-0000"></label>
-        <label>관심 있는 일<select name="type"><option>브랜딩</option><option>캠페인·영상</option><option>성과 광고</option><option>간판·매장</option><option>아직 잘 모르겠어요</option></select></label>
       </div>
       <fieldset class="picks"><legend>원하는 일 고르기 <small>(여러 개 골라도 돼요)</small></legend>
         <label class="pick"><input type="checkbox" name="want" value="일러스트레이션"><span>일러스트레이션</span></label>
@@ -648,7 +647,7 @@ form.inq label.pick input:focus-visible+span{outline:3px solid #4a7fd6;outline-o
     if(!v('name')||!(v('phone')||v('msg'))){note.textContent='이름과 연락처(또는 내용)를 적어 주세요.';return;}
     b.disabled=true;note.textContent='보내는 중이에요…';
     fetch('https://api.web3forms.com/submit',{method:'POST',headers:{'Content-Type':'application/json','Accept':'application/json'},
-      body:JSON.stringify({access_key:'ccf8f8a4-c99c-4911-995d-a8d979423d2a',subject:'[하늘그네 문의] '+(v('company')||v('name')),from_name:'하늘그네 홈페이지','이름':v('name'),'회사·가게':v('company'),'연락처':v('phone'),'관심 있는 일':v('type'),'원하는 일':[].slice.call(f.querySelectorAll('input[name=want]:checked')).map(function(x){return x.value;}).join(', ')||'선택 안 함','내용':v('msg')})})
+      body:JSON.stringify({access_key:'ccf8f8a4-c99c-4911-995d-a8d979423d2a',subject:'[하늘그네 문의] '+(v('company')||v('name')),from_name:'하늘그네 홈페이지','이름':v('name'),'회사·가게':v('company'),'연락처':v('phone'),'원하는 일':[].slice.call(f.querySelectorAll('input[name=want]:checked')).map(function(x){return x.value;}).join(', ')||'선택 안 함','내용':v('msg')})})
     .then(function(r){return r.json();}).then(function(d){
       if(d.success==='true'||d.success===true){f.reset();note.textContent='잘 받았어요! 하루 안에 연락드릴게요.';}
       else throw 0;

@@ -229,6 +229,20 @@ form.inq .btn{margin-top:4px;justify-self:start;font:inherit;font-family:"Jua",s
   .stat span{font-size:1.02rem}
 }
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+form.inq fieldset.picks{border:3px dashed var(--ink);border-radius:18px 22px 16px 24px;margin:0;padding:8px 12px 12px;display:flex;flex-wrap:wrap;gap:8px}
+form.inq fieldset.picks legend{font-family:"Jua",sans-serif;font-size:1.05rem;padding:0 6px}
+form.inq fieldset.picks legend small{font-size:.85rem;opacity:.7}
+form.inq label.pick{display:inline-flex;align-items:center;cursor:pointer}
+form.inq label.pick input{position:absolute;opacity:0;width:1px;height:1px}
+form.inq label.pick span{background:var(--paper);border:3px solid var(--ink);border-radius:999px;padding:3px 14px;box-shadow:2px 2px 0 var(--ink);font-family:"Jua",sans-serif;transition:transform .1s}
+form.inq label.pick input:checked+span{background:var(--yellow);transform:rotate(-2deg)}
+form.inq label.pick input:checked+span::before{content:"✓ "}
+form.inq label.pick input:focus-visible+span{outline:3px solid #4a7fd6;outline-offset:2px}
+/* 작업 사례 크게 */
+#cases .wrap{max-width:1180px}
+.slide{grid-template-columns:2.2fr 1fr}
+.slide-img{height:520px}
+@media (max-width:860px){.slide{grid-template-columns:1fr}.slide-img{height:auto;aspect-ratio:4/3}}
 </style>
 </head>
 <body>
@@ -299,7 +313,7 @@ form.inq .btn{margin-top:4px;justify-self:start;font:inherit;font-family:"Jua",s
     <div class="car-view" tabindex="0" aria-label="작업 슬라이드. 좌우 화살표 키로 넘길 수 있어요">
     <div class="car-track" id="car-track">
       <figure class="slide" role="group" aria-roledescription="slide" aria-label="1 / 5: 게임 〈제국과 왕국〉 메인 일러스트" id="slide-1">
-        <div class="slide-img"><img src="assets/works/w-empire-720.webp" srcset="assets/works/w-empire-720.webp 720w, assets/works/w-empire-1200.webp 1200w" sizes="(min-width:980px) 560px, 90vw" width="1200" height="585" loading="lazy" decoding="async" alt="동서양 판타지 전사들의 대결을 그린 게임 메인 일러스트"></div>
+        <div class="slide-img"><img src="assets/works/w-empire-720.webp" srcset="assets/works/w-empire-720.webp 720w, assets/works/w-empire-1200.webp 1200w" sizes="(min-width:980px) 780px, 92vw" width="1200" height="585" loading="lazy" decoding="async" alt="동서양 판타지 전사들의 대결을 그린 게임 메인 일러스트"></div>
         <figcaption>
           <p class="meta"><span class="chip">2013</span><span class="chip illu">일러스트</span></p>
           <h3>게임 〈제국과 왕국〉 메인 일러스트</h3>
@@ -307,7 +321,7 @@ form.inq .btn{margin-top:4px;justify-self:start;font:inherit;font-family:"Jua",s
         </figcaption>
       </figure>
       <figure class="slide" role="group" aria-roledescription="slide" aria-label="2 / 5: Orangesprocket 스팀펑크 펜화" id="slide-2">
-        <div class="slide-img"><img src="assets/works/w-orange-720.webp" srcset="assets/works/w-orange-720.webp 720w, assets/works/w-orange-1200.webp 1200w" sizes="(min-width:980px) 560px, 90vw" width="1200" height="1600" loading="lazy" decoding="async" alt="흑백 스팀펑크 풍 디지털 펜화"></div>
+        <div class="slide-img"><img src="assets/works/w-orange-720.webp" srcset="assets/works/w-orange-720.webp 720w, assets/works/w-orange-1200.webp 1200w" sizes="(min-width:980px) 780px, 92vw" width="1200" height="1600" loading="lazy" decoding="async" alt="흑백 스팀펑크 풍 디지털 펜화"></div>
         <figcaption>
           <p class="meta"><span class="chip">2020</span><span class="chip illu">일러스트</span></p>
           <h3>Orangesprocket 스팀펑크 펜화</h3>
@@ -315,7 +329,7 @@ form.inq .btn{margin-top:4px;justify-self:start;font:inherit;font-family:"Jua",s
         </figcaption>
       </figure>
       <figure class="slide" role="group" aria-roledescription="slide" aria-label="3 / 5: 판툰 도서관 배경" id="slide-3">
-        <div class="slide-img"><img src="assets/works/w-library-720.webp" srcset="assets/works/w-library-720.webp 720w, assets/works/w-library-1200.webp 1200w" sizes="(min-width:980px) 560px, 90vw" width="1200" height="999" loading="lazy" decoding="async" alt="밝은 만화풍 도서관 배경 그림"></div>
+        <div class="slide-img"><img src="assets/works/w-library-720.webp" srcset="assets/works/w-library-720.webp 720w, assets/works/w-library-1200.webp 1200w" sizes="(min-width:980px) 780px, 92vw" width="1200" height="999" loading="lazy" decoding="async" alt="밝은 만화풍 도서관 배경 그림"></div>
         <figcaption>
           <p class="meta"><span class="chip illu">일러스트</span></p>
           <h3>판툰 도서관 배경</h3>
@@ -323,7 +337,7 @@ form.inq .btn{margin-top:4px;justify-self:start;font:inherit;font-family:"Jua",s
         </figcaption>
       </figure>
       <figure class="slide" role="group" aria-roledescription="slide" aria-label="4 / 5: 게임 〈제국과 왕국〉 Flamewizard 카드" id="slide-4">
-        <div class="slide-img"><img src="assets/works/w-flame-720.webp" srcset="assets/works/w-flame-720.webp 720w, assets/works/w-flame-1200.webp 1200w" sizes="(min-width:980px) 560px, 90vw" width="1067" height="1600" loading="lazy" decoding="async" alt="불꽃을 다루는 마법사 캐릭터 카드"></div>
+        <div class="slide-img"><img src="assets/works/w-flame-720.webp" srcset="assets/works/w-flame-720.webp 720w, assets/works/w-flame-1200.webp 1200w" sizes="(min-width:980px) 780px, 92vw" width="1067" height="1600" loading="lazy" decoding="async" alt="불꽃을 다루는 마법사 캐릭터 카드"></div>
         <figcaption>
           <p class="meta"><span class="chip">2013</span><span class="chip char">캐릭터</span></p>
           <h3>게임 〈제국과 왕국〉 Flamewizard 카드</h3>
@@ -331,7 +345,7 @@ form.inq .btn{margin-top:4px;justify-self:start;font:inherit;font-family:"Jua",s
         </figcaption>
       </figure>
       <figure class="slide" role="group" aria-roledescription="slide" aria-label="5 / 5: 판툰 판다 캐릭터" id="slide-5">
-        <div class="slide-img"><img src="assets/works/w-panda-720.webp" srcset="assets/works/w-panda-720.webp 720w, assets/works/w-panda-1200.webp 1200w" sizes="(min-width:980px) 560px, 90vw" width="1154" height="1154" loading="lazy" decoding="async" alt="귀여운 판다 마스코트 캐릭터"></div>
+        <div class="slide-img"><img src="assets/works/w-panda-720.webp" srcset="assets/works/w-panda-720.webp 720w, assets/works/w-panda-1200.webp 1200w" sizes="(min-width:980px) 780px, 92vw" width="1154" height="1154" loading="lazy" decoding="async" alt="귀여운 판다 마스코트 캐릭터"></div>
         <figcaption>
           <p class="meta"><span class="chip char">캐릭터</span></p>
           <h3>판툰 판다 캐릭터</h3>
@@ -462,6 +476,12 @@ form.inq .btn{margin-top:4px;justify-self:start;font:inherit;font-family:"Jua",s
         <label>연락처<input name="phone" type="tel" autocomplete="tel" placeholder="010-0000-0000"></label>
         <label>관심 있는 일<select name="type"><option>브랜딩</option><option>캠페인·영상</option><option>성과 광고</option><option>간판·매장</option><option>아직 잘 모르겠어요</option></select></label>
       </div>
+      <fieldset class="picks"><legend>원하는 일 고르기 <small>(여러 개 골라도 돼요)</small></legend>
+        <label class="pick"><input type="checkbox" name="want" value="일러스트레이션"><span>일러스트레이션</span></label>
+        <label class="pick"><input type="checkbox" name="want" value="캐릭터 디자인"><span>캐릭터 디자인</span></label>
+        <label class="pick"><input type="checkbox" name="want" value="홍보물·인쇄물"><span>홍보물·인쇄물</span></label>
+        <label class="pick"><input type="checkbox" name="want" value="기타"><span>기타</span></label>
+      </fieldset>
       <label>하고 싶은 이야기<textarea name="msg" placeholder="무엇이 고민인지 편하게 적어주세요."></textarea></label>
       <button class="btn" type="submit">그네 밀어주세요 ➜</button>
       <p class="fine">보내기를 누르면 바로 접수돼요.</p>
@@ -628,7 +648,7 @@ form.inq .btn{margin-top:4px;justify-self:start;font:inherit;font-family:"Jua",s
     if(!v('name')||!(v('phone')||v('msg'))){note.textContent='이름과 연락처(또는 내용)를 적어 주세요.';return;}
     b.disabled=true;note.textContent='보내는 중이에요…';
     fetch('https://api.web3forms.com/submit',{method:'POST',headers:{'Content-Type':'application/json','Accept':'application/json'},
-      body:JSON.stringify({access_key:'ccf8f8a4-c99c-4911-995d-a8d979423d2a',subject:'[하늘그네 문의] '+(v('company')||v('name')),from_name:'하늘그네 홈페이지','이름':v('name'),'회사·가게':v('company'),'연락처':v('phone'),'관심 있는 일':v('type'),'내용':v('msg')})})
+      body:JSON.stringify({access_key:'ccf8f8a4-c99c-4911-995d-a8d979423d2a',subject:'[하늘그네 문의] '+(v('company')||v('name')),from_name:'하늘그네 홈페이지','이름':v('name'),'회사·가게':v('company'),'연락처':v('phone'),'관심 있는 일':v('type'),'원하는 일':[].slice.call(f.querySelectorAll('input[name=want]:checked')).map(function(x){return x.value;}).join(', ')||'선택 안 함','내용':v('msg')})})
     .then(function(r){return r.json();}).then(function(d){
       if(d.success==='true'||d.success===true){f.reset();note.textContent='잘 받았어요! 하루 안에 연락드릴게요.';}
       else throw 0;

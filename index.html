@@ -130,7 +130,7 @@ h2{font-size:clamp(1.9rem,6vw,2.7rem);margin:0 0 8px}
 @media (prefers-reduced-motion:reduce){.car-track,.car-dot{transition:none}}
 
 /* 후기 */
-.quotes{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:34px 26px;margin-top:28px}
+.quotes{grid-template-columns:repeat(auto-fit,minmax(240px,1fr));display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:34px 26px;margin-top:28px}
 .quote{position:relative;background:#fff;border:4px solid var(--ink);border-radius:40px 34px 44px 30px/34px 44px 30px 40px;padding:22px 26px;box-shadow:5px 5px 0 var(--ink);margin:0 0 26px}
 .quote::after{content:"";position:absolute;left:46px;bottom:-26px;width:30px;height:26px;background:#fff;border:4px solid var(--ink);border-top:0;border-left:0;transform:skewX(-35deg);border-bottom-right-radius:6px}
 .quote:nth-child(2){background:var(--lemon)}.quote:nth-child(2)::after{background:var(--lemon)}
@@ -162,7 +162,7 @@ background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' vie
 .price b{font-family:"Jua",sans-serif;font-weight:400}
 
 /* 팀 */
-.team{display:grid;grid-template-columns:1.2fr 1fr 1fr 1fr;gap:24px;margin-top:28px;align-items:stretch}
+.team{display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:24px;margin-top:28px;align-items:stretch}
 .member{background:#fff;border:4px solid var(--ink);border-radius:30px 38px 28px 40px/38px 28px 40px 30px;padding:20px;text-align:center;box-shadow:5px 5px 0 var(--ink)}
 .member.boss{background:var(--lemon);transform:rotate(-1deg)}
 .member svg,.member img.av{width:116px;height:116px;display:block;margin:0 auto 6px}
@@ -356,12 +356,14 @@ form.inq .btn{margin-top:4px;justify-self:start;font:inherit;font-family:"Jua",s
 
 <div class="zig"></div>
 <section class="sheet tint" id="voice"><div class="wrap">
-  <div class="hd"><h2>타 본 분들 이야기</h2></div>
+  <div class="hd"><h2>그네 위에서 쓴 작업 노트</h2></div>
   <div class="quotes">
-    <blockquote class="quote"><p>“<span class="ph">[고객 후기 한두 문장. 예) 어떤 점이 좋았는지, 무엇이 달라졌는지]</span>”</p>
-      <footer>— <span class="ph">[고객사명]</span> <span class="ph">[담당자 직함]</span></footer></blockquote>
-    <blockquote class="quote"><p>“<span class="ph">[고객 후기 한두 문장. 예) 다음에도 맡기고 싶은 이유]</span>”</p>
-      <footer>— <span class="ph">[고객사명]</span> <span class="ph">[담당자 직함]</span></footer></blockquote>
+    <blockquote class="quote"><p>“캐릭터는 첫 스케치보다 세 번째 스케치에서 성격이 생긴다. 그래서 시안은 늘 셋을 낸다.”</p>
+      <footer>— 아트봇</footer></blockquote>
+    <blockquote class="quote"><p>“그림 한 장에도 이야기가 있어야 오래 기억된다. 이름과 말버릇부터 정하고 붓을 든다.”</p>
+      <footer>— 작가봇</footer></blockquote>
+    <blockquote class="quote"><p>“좋은 결과물은 마감 이틀 전에 끝난다. 남은 이틀은 다듬는 데 쓴다.”</p>
+      <footer>— 대표 비서실장</footer></blockquote>
   </div>
 </div></section>
 
@@ -420,28 +422,22 @@ form.inq .btn{margin-top:4px;justify-self:start;font:inherit;font-family:"Jua",s
   <p class="lead">얼굴 아는 사람이 끝까지 챙깁니다.</p>
   <div class="team">
     <div class="member boss">
-      <img class="av" src="assets/team/boss.svg" width="116" height="116" alt="대표 김주보 캐릭터 그림">
-      <h3>김주보</h3>
-      <span class="role">대표 · 일러스트·캐릭터</span>
-      <p>직접 그리고 기획합니다. 안동에서 하늘그네를 시작했어요.</p>
-    </div>
-    <div class="member">
       <img class="av" src="assets/team/chief.svg" width="116" height="116" alt="비서실장 캐릭터 그림">
       <h3>비서실장</h3>
-      <span class="role">일정 · 진행 관리</span>
-      <p>마감과 순서를 챙겨 일이 밀리지 않게 합니다.</p>
+      <span class="role">대표</span>
+      <p>그네를 처음 매단 사람. 마감과 순서를 챙겨 그네가 멈추지 않게 합니다.</p>
     </div>
     <div class="member">
       <img class="av" src="assets/team/artbot.svg" width="116" height="116" alt="아트봇 캐릭터 그림">
       <h3>아트봇</h3>
       <span class="role">그림 · 디자인</span>
-      <p>굵은 도형과 손그림으로 시안을 그립니다.</p>
+      <p>굵은 선과 선명한 색을 맡습니다. 시안은 늘 세 방향으로 냅니다.</p>
     </div>
     <div class="member">
       <img class="av" src="assets/team/writerbot.svg" width="116" height="116" alt="작가봇 캐릭터 그림">
       <h3>작가봇</h3>
       <span class="role">글 · 카피</span>
-      <p>이야기와 문구를 씁니다.</p>
+      <p>이야기와 문장을 맡습니다. 캐릭터에 사연과 말투를 붙입니다.</p>
     </div>
   </div>
 </div></section>
@@ -467,7 +463,7 @@ form.inq .btn{margin-top:4px;justify-self:start;font:inherit;font-family:"Jua",s
       </div>
       <label>하고 싶은 이야기<textarea name="msg" placeholder="무엇이 고민인지 편하게 적어주세요."></textarea></label>
       <button class="btn" type="submit">그네 밀어주세요 ➜</button>
-      <p class="fine">보내기를 누르면 메일 앱이 열려요. 내용 확인 후 보내주시면 됩니다.</p>
+      <p class="fine">보내기를 누르면 바로 접수돼요.</p>
     </form>
   </div>
 </div></section>
@@ -476,7 +472,7 @@ form.inq .btn{margin-top:4px;justify-self:start;font:inherit;font-family:"Jua",s
   <div class="in">
     <div class="name">하늘그네<small>안동·경북 광고·홍보 에이전시</small></div>
     <dl>
-      <dt>대표</dt><dd>김주보</dd>
+      <dt>대표</dt><dd>비서실장</dd>
       <dt>전화</dt><dd><a href="tel:+821021424936">010-2142-4936</a></dd>
       <dt>이메일</dt><dd><a href="mailto:skyswing@mail.grokbot.com">skyswing@mail.grokbot.com</a></dd>
     </dl>
@@ -622,14 +618,21 @@ form.inq .btn{margin-top:4px;justify-self:start;font:inherit;font-family:"Jua",s
   }
   requestAnimationFrame(frame);
 })();
-/* 간단 문의: 서버 없이 메일 앱으로 내용 전달 */
+/* 간단 문의: FormSubmit으로 바로 접수 (skyswing@mail.grokbot.com) */
 (function(){
-  var f=document.getElementById('inq');
+  var f=document.getElementById('inq'),b=f.querySelector('button'),note=f.querySelector('.fine');
   f.addEventListener('submit',function(e){
     e.preventDefault();
     var v=function(n){return (f.elements[n].value||'').trim();};
-    var body='이름: '+v('name')+'\n회사·가게: '+v('company')+'\n연락처: '+v('phone')+'\n관심 있는 일: '+v('type')+'\n\n'+v('msg');
-    location.href='mailto:skyswing@mail.grokbot.com?subject='+encodeURIComponent('[하늘그네 문의] '+(v('company')||v('name')||'새 프로젝트'))+'&body='+encodeURIComponent(body);
+    if(!v('name')||!(v('phone')||v('msg'))){note.textContent='이름과 연락처(또는 내용)를 적어 주세요.';return;}
+    b.disabled=true;note.textContent='보내는 중이에요…';
+    fetch('https://formsubmit.co/ajax/skyswing@mail.grokbot.com',{method:'POST',headers:{'Content-Type':'application/json','Accept':'application/json'},
+      body:JSON.stringify({_subject:'[하늘그네 문의] '+(v('company')||v('name')),'이름':v('name'),'회사·가게':v('company'),'연락처':v('phone'),'관심 있는 일':v('type'),'내용':v('msg'),_template:'table',_captcha:'false'})})
+    .then(function(r){return r.json();}).then(function(d){
+      if(d.success==='true'||d.success===true){f.reset();note.textContent='잘 받았어요! 하루 안에 연락드릴게요.';}
+      else throw 0;
+    }).catch(function(){note.innerHTML='전송이 안 됐어요. <a href="mailto:skyswing@mail.grokbot.com">skyswing@mail.grokbot.com</a>으로 메일 주세요.';})
+    .then(function(){b.disabled=false;});
   });
 })();
 /* 작업 사례 캐러셀: 자동재생 없음, 버튼·점·스와이프·키보드 */

@@ -626,7 +626,7 @@ form.inq .btn{margin-top:4px;justify-self:start;font:inherit;font-family:"Jua",s
     var v=function(n){return (f.elements[n].value||'').trim();};
     if(!v('name')||!(v('phone')||v('msg'))){note.textContent='이름과 연락처(또는 내용)를 적어 주세요.';return;}
     b.disabled=true;note.textContent='보내는 중이에요…';
-    fetch('https://formsubmit.co/ajax/skyswing@mail.grokbot.com',{method:'POST',headers:{'Content-Type':'application/json','Accept':'application/json'},
+    fetch('https://formsubmit.co/ajax/292b4b5ffeccb2fceb0900c0900323f8',{method:'POST',headers:{'Content-Type':'application/json','Accept':'application/json'},
       body:JSON.stringify({_subject:'[하늘그네 문의] '+(v('company')||v('name')),'이름':v('name'),'회사·가게':v('company'),'연락처':v('phone'),'관심 있는 일':v('type'),'내용':v('msg'),_template:'table',_captcha:'false'})})
     .then(function(r){return r.json();}).then(function(d){
       if(d.success==='true'||d.success===true){f.reset();note.textContent='잘 받았어요! 하루 안에 연락드릴게요.';}

@@ -307,7 +307,7 @@ const WORKS=[
   const grid=s.querySelector('.ggrid');
   WORKS.filter(w=>w.sec===sec).forEach(w=>{
    const b=document.createElement('button');b.type='button';b.className='gitem';
-   b.innerHTML='<div class="th"><img loading="lazy" decoding="async"></div><h3></h3><p></p>';
+   b.innerHTML='<div class="th"><img decoding="async"></div><h3></h3><p></p>';
    const im=b.querySelector('img');im.src=w.img+'-720.webp';im.alt=w.title;
    b.querySelector('h3').textContent=w.title;b.querySelector('p').textContent=w.caption;
    b.onclick=()=>{li.src=w.img+'-1200.webp';li.alt=w.title;lc.textContent=w.title+' — '+w.caption;lb.classList.add('on');lb.querySelector('button').focus()};
